@@ -1,0 +1,11 @@
+<p>product-detail works!</p>
+
+<div *ngIf="currentProduct">
+    <p>{{currentProduct.name}}</p>
+    <img [src]="currentProduct.avatar">
+    <p>{{currentProduct.createdAt}}</p>
+
+</div>
+
+<app-filter></app-filter>
+

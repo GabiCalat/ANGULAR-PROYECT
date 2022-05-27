@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+* {     
+    margin: 0;     
+    padding: 0;     
+    text-decoration: none;     
+    list-style: none; }
+
+.body{
+height: 100vh;
+width: 100%;
+position: relative;
+background-color: #fdffcd;
+background-image:url("../assets/nike.jpeg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+text-decoration: none;
+
+}

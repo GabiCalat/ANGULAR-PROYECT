@@ -1,0 +1,29 @@
+<div class="product"
+*ngIf="product"
+(click)="onClick()"
+[ngClass]="{
+'product_:active':isSelected
+}"
+>
+
+
+    <img class ="product_img" [src]="product.avatar">
+
+    <div class="product_info"> 
+
+    <p class=" product_name">{{product.name|uppercase}}</p>
+    <p class="product_createdAt">{{product.createdAt|date:'short'}}</p>
+
+    <button
+    
+    class="product_delete"
+    *ngIf="canDelete"
+    (click)="onDelete()"
+    
+    >Eliminar</button>
+
+    <a [routerLink]="['/detail',product.id]">Ver mas</a>
+
+</div>
+
+</div>

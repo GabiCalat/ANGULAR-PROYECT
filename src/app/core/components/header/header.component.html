@@ -1,0 +1,36 @@
+<div class="first-header">
+    <p class="first-header-name">NUEVA COLECCIÓN</p>
+
+
+</div>
+
+<div class="header-container">
+    <a class="header-class" 
+    [ngStyle]="{'margin-right':'10px'}"
+    [routerLink]="['']"
+    [ngClass]="{
+        'link--active':selectedRoute === ''
+    }"
+    
+    >HOME</a>
+
+    <a class="header-class"
+    [routerLink]="['/product-list']"
+    [ngClass]="{
+        'link--active':selectedRoute === 'product-list'
+    }"
+    >
+   
+    
+    PARRILLA</a>
+
+
+    <a class="header-class"
+    [routerLink]="['create-list']"
+    [ngClass]="{
+        'link--active':selectedRoute === 'create-product'
+    }"
+    >CREATE PRODUCT</a>
+
+
+</div>

@@ -1,0 +1,40 @@
+FORMULARIO
+
+<form
+*ngIf="productForm"
+[formGroup]="productForm"
+(submit)="saveProduct()"
+>
+<div>
+<input class="form_input"placeholder="Name" formControlName="name"><input>
+<p 
+
+    
+
+    class="error"
+    *ngIf="!productForm.get('name')?.valid && productForm.get('name')?.dirty"
+
+> REQUIRED VALUE    
+</p>
+</div>
+
+<div>
+    <input class="form_input"placeholder="Image" formControlName="avatar"><input>
+    <p
+        class="error"
+        *ngIf="!productForm.get('avatar')?.valid && productForm.get('avatar')?.dirty"
+        
+        > REQUIRED VALUE    
+
+    
+    </p>
+    </div>
+
+    <button
+        class="form__button"
+        type="submit"
+        [disabled]="!productForm.valid"
+     >{{product? 'Edit':'Create'}}</button>
+
+
+</form>

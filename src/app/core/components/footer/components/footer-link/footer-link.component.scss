@@ -1,0 +1,14 @@
+.footer {
+    display: flex;    
+    flex-direction:column;
+    position: absolute;
+  bottom: 0;
+  
+      &__image{
+           width: 30px;
+           height: 30px;
+
+      }
+     
+    }
+    

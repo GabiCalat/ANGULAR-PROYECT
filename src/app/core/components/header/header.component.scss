@@ -1,0 +1,34 @@
+.first-header{
+    background-color: black;
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+}
+.first-header-name{
+    color: white;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+.header-container {
+    top: 0;
+    // position: fixed;
+    padding: 3px;
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+
+    &__a{
+    color: global-variable-exists(--primary-color);
+    padding: 10px 0;
+    backdrop-filter: blur(4px);
+    text-decoration: none;
+    }
+
+    }
