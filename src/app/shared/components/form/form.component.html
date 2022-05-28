@@ -6,7 +6,7 @@ FORMULARIO
 (submit)="saveProduct()"
 >
 <div>
-<input class="form_input"placeholder="Name" formControlName="name"><input>
+<input class="form_input"placeholder="Name" formControlName="name">
 <p 
 
     
@@ -19,7 +19,7 @@ FORMULARIO
 </div>
 
 <div>
-    <input class="form_input"placeholder="Image" formControlName="avatar"><input>
+    <input class="form_input"placeholder="Image" formControlName="avatar">
     <p
         class="error"
         *ngIf="!productForm.get('avatar')?.valid && productForm.get('avatar')?.dirty"
